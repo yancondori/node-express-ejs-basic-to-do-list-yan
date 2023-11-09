@@ -26,7 +26,7 @@ The '-' in the tags (<%- -%>) trims the newline characters from the output, keep
           <p>
             <%= text %>
           </p>
-          <input type="hidden" name="listTitle" value="<%= listTitle %>">
+          <input type="hidden" name="listName" value="<%= listTitle %>">
         </form>
       </div>
       <% }); %>
@@ -42,6 +42,8 @@ The '-' in the tags (<%- -%>) trims the newline characters from the output, keep
       'autocomplete="off"' is used to prevent the browser from auto-completing this field.
       -->
           <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+          <input type="hidden" name="listName" value="<%= listTitle %>">
+
           <!--
       The submit button for the form. When clicked, it will submit the form data.
       The 'name' attribute for the button is set to 'list', but without a value; it serves no purpose in this code.
