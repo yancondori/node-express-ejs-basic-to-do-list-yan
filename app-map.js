@@ -117,9 +117,9 @@ app.get("/about", function (req, res) {
 });
 
 // Start the server on port 3000 and log a message to the console once the server is running.
-
+//In JavaScript, the logical OR (||) operator returns the first operand if it is truthy, and its second operand otherwise.
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, function () {
-  console.log("Server started on port ${PORT}");
+  console.log("Server started on port", PORT);
 });
